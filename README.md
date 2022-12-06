@@ -41,11 +41,11 @@ Within every user's CSV file:
    The current version contains features from the following sensors, with sensor names:
 --- raw_acc: Accelerometer from the phone. The 'raw' version of acceleration (as opposed to the decomposed versions of gravity and user-acceleration).   
 --- proc_gyro: Gyroscope from the phone. Processed version of gyroscope measurements (the OS calculates a version that removes drift).
---- raw_magnet: Magnetometer from the phone. Raw version (as opposed to bias-fixed version that the OS also provides).
---- watch_acceleration: Accelerometer from the watch.
+--- raw_magnet: Magnetometer from the phone. Raw version (as opposed to bias-fixed version that the OS also provides).  磁强计
+--- watch_acceleration: Accelerometer from the watch.  
 --- watch_heading: Heading from the compass on the watch.
 --- location: Location services. These features were extracted offline for every example from the sequence of latitude-longitude-altitude updates from the example's minute.
-              These features regard only to relative-location (not absolute location in the world) - meaning, they describe variability of movement within the minute.
+              These features regard only to relative-location (not absolute location in the world) - meaning, they describe variability of movement within the minute.  分钟内运动的可变性
 --- location_quick_features: Location services. These features were calculated on the phone when data was collected. 
                              These are available even in cases that the other location features are not because the user wanted to conceal their absolute location coordinates.
 							 These quick features are very simple heuristics that approximate the more thoughtful offline features.
